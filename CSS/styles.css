@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+margin: 0;
+  font-family: fantasy;
+  background: rgb(148, 144, 156);
+  color: rgb(22, 10, 10);
+  /*height: 100vh;*/
+  /*line-height: 1.6;*/
+  overflow:scroll;
+}
+
+gallery {
+  padding: 0.5vw;
+  font-size: 0;
+  flex-flow: row wrap;
+  display: flex;
+  padding: 0.5vw;
+  font-size: 0;
+  flex-flow: row wrap;
+  display: flex;
+}
+
+gallery div.item {
+  flex: auto;
+  width: 200px;
+  margin: 0.5vw;
+  transition: transform 0.15s linear;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  background: white;
+  padding: 5px;
+  border-radius: 2px;
+  max-width: 400px;
+}
+
+gallery div.item:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+gallery div.item:nth-child(odd) {
+  transform: rotate(-4deg);
+}
+
+gallery div.item:nth-child(3n), gallery div.item:nth-child(7n) {
+  transform: rotate(-7deg);
+}
+
+gallery div.item:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  transform: scale(1.25);
+  transition: transform 0.15s linear;
+  z-index: 5;
+}
+
+gallery div.item img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 400px) {
+  gallery div.item {
+    margin: 0;
+  }
+
+  .gallery {
+    padding: 0;
+  }
+}
+
+/*Buttons*/
+
+
+
+ 
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y:scroll; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.7);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: rgb(39, 162, 211);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+ 
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+dl {
+  
+  padding: 0.5rem;
+  text-transform: capitalize;
+  
+ 
+}
+
+
+
+section h1 {
+  font-size: 4rem;
+}
+.footer {
+  border-style: #d37979;
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #947979;
+  text-align: center;
+}
+
+/* ide 1 */
+/*
+*{
+
+
+/*test area 2*/
+
