@@ -152,6 +152,7 @@ dl {
 #Tegninger{
   padding: 60px;
   text-shadow: 2px 2px 3px #f4f4f4;
+  text-size-adjust: auto;
 }
 
 .Hobby{
