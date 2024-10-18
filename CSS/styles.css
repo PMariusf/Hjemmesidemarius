@@ -6,12 +6,13 @@
 body {
 margin: 0;
   font-family: fantasy;
-  background: rgb(148, 144, 156);
+  background: rgb(217, 214, 223);
   color: rgb(22, 10, 10);
   /*height: 100vh;*/
   /*line-height: 1.6;*/
   overflow:scroll;
 }
+
 
 gallery {
   padding: 0.5vw;
@@ -34,6 +35,7 @@ gallery div.item {
   padding: 5px;
   border-radius: 2px;
   max-width: 400px;
+  min-width: none;
 }
 
 gallery div.item:nth-child(even) {
@@ -133,17 +135,36 @@ section {
   scroll-snap-align: center;
 }
 dl {
-  
+
+ 
   padding: 0.5rem;
   text-transform: capitalize;
   
+  
  
 }
+#Meg{
+   padding: 60px;
+   text-shadow: 2px 2px 3px #f4f4f4;
 
+}
 
+#Tegninger{
+  padding: 60px;
+  text-shadow: 2px 2px 3px #f4f4f4;
+}
+
+.Hobby{
+   padding: 50px;
+   margin: 30px;
+  text-size-adjust: initial ;
+   text-decoration:solid underline;
+}
 
 section h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  text-align: center;
+  
 }
 .footer {
   border-style: #d37979;
@@ -159,6 +180,9 @@ section h1 {
 /* ide 1 */
 /*
 *{
+
+
+/*test area 2*/
 
 
 /*test area 2*/
